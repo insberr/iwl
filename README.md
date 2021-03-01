@@ -6,7 +6,7 @@ Plus HTML is outdated.
 
 Allow converting to HTML, MarkDown
 
-`.is` - insberr script
+`.is` - insberr script. 
 `.isl` - insberr style language
 
 Easy to use, read, and write.
