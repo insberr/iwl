@@ -1,14 +1,3 @@
-:assets
-  :name - Hello World;
-;
-
-[body] {
-  [text &highlight] {
-    Welcome to irtl.
-  }
-}
-
-
 add "style.isl"
 add "main.is"
 
