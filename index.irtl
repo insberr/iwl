@@ -1,0 +1,79 @@
+:assets
+  :name - Hello World;
+;
+
+[body] {
+  [text &highlight] {
+    Welcome to irtl.
+  }
+}
+
+
+add "style.isl"
+add "main.is"
+
+make user (
+  data {
+    name - "Jonah",
+    age - 16,
+    username - "insberr"
+  }
+)
+
+:body(
+    &text~black bg~color~#222222
+    &dark? text~white bg~color:*34.34.34.1
+) [
+    :div(#welcome, $user) [
+        Hello ;name!
+    ]
+]
+
+<This is a comment>
+
+<This
+is a
+multi line
+comment>
+
+<
+This is also
+a multi line
+comment
+>
+
+
+
+<
+:element
+$variable
+&style
+@eventhandler
+#id
+
+Styles
+
+Makes text in the element of the color followed after ~
+text~red
+
+Dark mode
+dark:text~white
+
+Light mode
+light:text~black
+
+Other color theme (who knows)
+theme~red:text~green
+
+
+Screen sizes
+This will automatically deal with the variable sizes
+phone:width~5px
+tablet:width~20px
+desktop:width~40px
+
+You can specify a device, but it's not recommended
+phone~iphone~xr:width~6px
+
+>
+
