@@ -1,13 +1,16 @@
+<import custom styles and scripts>
 add "style.isl"
 add "main.is"
 
-make user (
+make user {
   data {
     name - "Jonah",
     age - 16,
     username - "insberr"
   }
-)
+}
+
+client = socket.url("https://")}
 
 :body(
     &text~black bg~color~#222222
@@ -19,19 +22,6 @@ make user (
 ]
 
 <This is a comment>
-
-<This
-is a
-multi line
-comment>
-
-<
-This is also
-a multi line
-comment
->
-
-
 
 <
 :element
