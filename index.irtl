@@ -2,15 +2,19 @@
 add "style.isl"
 add "main.is"
 
-make user {
+make user [
   data {
     name - "Jonah",
     age - 16,
     username - "insberr"
   }
-}
+]
 
-client = socket.url("https://")}
+client = new socket~url("wss://socket.somewebsite.dev/")
+<when op code '1' is recived> 
+client.on~1(data) [
+  <do stuff here>
+]
 
 :body(
     &text~black bg~color~#222222
