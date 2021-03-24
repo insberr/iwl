@@ -25,6 +25,43 @@ client.on~1(data) [
     ]
 ]
 
+
+
+
+:title [ Hello World ];
+
+:body [
+    :h1 [ Hello World! ];
+    :div [
+        :p (color-red) [
+            This text is red!
+            Also Hello World!
+        ]p;
+    ]div;
+]body;
+
+
+
+// Create a variable
+make person {
+    first > "Ins"
+    last > "Berr"
+}
+
+:body() {
+    This is text
+    :div() {
+        Hello $person.first!
+        :div() {
+            Render a code block;
+            ```js
+            console.log("Hello World");
+            ```
+        }div;
+    }div;
+}body;
+// The name in between the '}' and ';' is optional
+
 <This is a comment>
 
 <
