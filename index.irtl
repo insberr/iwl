@@ -77,6 +77,21 @@ body() {
 
 
 
+// =============
+new emlc: app {
+  style: div~center
+}
+
+body(style: text~bold text_size~10) {
+  div(app) {
+    link(url: "https://github.com/insberr", newtab!) {[ Follow me on GitHub ]}
+  }
+}
+
+// =============
+
+
+
 <This is a comment>
 
 <
